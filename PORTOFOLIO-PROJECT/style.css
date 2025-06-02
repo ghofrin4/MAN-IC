@@ -26,7 +26,7 @@ a {
 /* button */
 .btn {
     padding: 1rem 1.5rem;
-    background: rgb(31, 49, 31);
+    background: #99BC85;
     border: 1.5px solid rgb(3, 3, 3);
     cursor: pointer;
 }
@@ -276,19 +276,19 @@ h2 {
 }
 
 /* Warna untuk masing-masing skill dan sesuai persentase */
-.progress-bar.progress-bar.public-speaking {
+.progress-bar.progress-bar.singing {
     background-color: #a4bda4;
-    width: 80%;
+    width: 78%;
 }
 
-.progress-bar.time-management {
+.progress-bar.physic {
     background-color: #a4bda4;
-    width: 87%;
+    width: 75%;
 }
 
-.progress-bar.problem-solving {
+.progress-bar.canva {
     background-color: #a4bda4;
-    width: 86%;
+    width: 76%;
 }
 
 
@@ -340,6 +340,7 @@ input[type="email"],
 textarea {
     width: 100%;
     padding: 10px;
+    background-color: #AD8E70;
     border: 1px solid #000000;
     border-radius: 4px;
 }
@@ -347,7 +348,7 @@ textarea {
 button {
     padding: 10px 15px;
     background-color: #876445;
-    color: #95f0cf;
+    color: #0c0d0d;
     border: none;
     border-radius: 4px;
     cursor: pointer;

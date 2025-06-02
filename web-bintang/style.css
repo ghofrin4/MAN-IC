@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background:
+    radial-gradient(circle at 25% 35%, #4b0082, transparent 50%),
+    radial-gradient(circle at 75% 65%, #001f3f, transparent 60%),
+    radial-gradient(circle at 50% 80%, #0a0a0a, transparent 70%),
+    linear-gradient(135deg, #1a0a3d 20%, #2b1a5f 40%, #120c2b 70%, #000000 100%);
+  background-blend-mode: screen;
+  color: #d4caea;
+  min-height: 100vh;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+/* Stars Layer (tetap sama) */
+.stars, .stars2, .stars3, .stars4, .stars5 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-repeat: repeat;
+  background-position: 0 0;
+  z-index: -1;
+}
+
+.stars {
+  background-image: url('https://www.transparenttextures.com/patterns/stardust.png');
+  animation: moveStars 150s linear infinite;
+  opacity: 0.5;
+}
+
+.stars2 {
+  background-image: url('https://www.transparenttextures.com/patterns/tiny-grid.png');
+  animation: moveStars 500s linear infinite;
+  opacity: 0.15;
+}
+
+.stars3 {
+  background-image: url('https://www.transparenttextures.com/patterns/noise.png');
+  animation: moveStars 500s linear infinite;
+  opacity: 0.2;
+}
+
+.stars4 {
+  background-image: url('https://www.transparenttextures.com/patterns/starry-night.png');
+  animation: moveStars 500s linear infinite;
+  opacity: 0.1;
+}
+
+.stars5 {
+  background-image: url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+  animation: moveStars 500s linear infinite;
+  opacity: 0.1;
+}
+
+@keyframes moveStars {
+  from { background-position: 0 0; }
+  to { background-position: 2000px 2000px; }
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 60px 20px 30px;
+  background: linear-gradient(180deg, rgba(75,0,130,0.4), transparent);
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #2d1a64; /* ungu lembut */
+  text-shadow:
+    0 0 10px #c4b5fd,
+    0 0 20px #c4b5fd,
+    0 0 30px #8b5cf6;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  color: #d8d4f9;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+/* Card Container */
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 40px 20px;
+  background: rgba(120, 85, 255, 0.08);
+  backdrop-filter: blur(15px);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow:
+    0 0 30px rgba(167, 139, 250, 0.3);
+  transition: all 0.4s ease;
+}
+
+.card-container:hover {
+  box-shadow:
+    0 0 45px rgba(167, 139, 250, 0.6);
+}
+
+/* Foto Profil */
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow:
+    0 0 25px #a78bfaaa;
+  margin-bottom: 15px;
+}
+
+/* Judul Card */
+.card-container h2 {
+  font-family: 'Orbitron', sans-serif;
+  color: #d6bcf2;
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-shadow: 0 0 12px #a78bfaaa;
+}
+
+/* Paragraf Card */
+.card-container p {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.7;
+  font-size: 1.05rem;
+  color: #ddd6fe;
+  text-align: justify;
+}
+
+/* Gambar Card */
+.card-container img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: contain;
+  border-radius: 15px;
+  box-shadow:
+    0 0 25px #c4b5fd88;
+  margin: 20px 0;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.card-container img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 20px #a78bfacc);
+}
+
+/* Navigasi Tombol */
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin: 25px 0 40px;
+  flex-wrap: wrap;
+}
+
+.nav-buttons button {
+  background: linear-gradient(135deg, #a78bfa, #7c3aed);
+  color: #eee;
+  padding: 12px 26px;
+  border: none;
+  border-radius: 12px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 15px #7c3aedcc;
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.nav-buttons button:hover {
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  transform: scale(1.08);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  color: #b3a5ff;
+  font-size: 0.9rem;
+  background: rgba(120, 85, 255, 0.05);
+  border-top: 1px solid rgba(167, 139, 250, 0.3);
+  margin-top: 40px;
+}
+
+
+
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background: white;
+  border-radius: 50%;
+  animation: twinkle 2s infinite ease-in-out;
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.2; }
+  50% { opacity: 1; }
+}
+.star-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+body {
+  cursor: url('image/17.jpeg'), auto;
+}
+.shooting-star {
+  position: absolute;
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(white, transparent);
+  top: 0;
+  left: 50%;
+  animation: shoot 3s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes shoot {
+  0% {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-300px, 600px);
+    opacity: 0;
+  }
+}
